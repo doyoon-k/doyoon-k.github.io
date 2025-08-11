@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="hero.title"></title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="nav.skip"></a>
+  <header class="top-nav">
+    <nav>
+      <a href="index.html" class="brand" data-i18n="nav.brand"></a>
+      <button id="nav-toggle" aria-label="Menu" data-i18n-label="nav.menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="#about" data-i18n="nav.about"></a></li>
+        <li><a href="#projects" data-i18n="nav.projects"></a></li>
+        <li><a href="#skills" data-i18n="nav.skills"></a></li>
+        <li><a href="#contact" data-i18n="nav.contact"></a></li>
+        <li><button id="lang-toggle" data-i18n="lang.button"></button></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <h1 data-i18n="hero.title"></h1>
+        <p data-i18n="hero.sub"></p>
+        <div class="cta-group">
+          <a href="#projects" class="btn" data-i18n="cta.viewProjects"></a>
+          <a href="assets/resume.pdf" class="btn" data-i18n="cta.resume"></a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="slideshow">
+          <img src="assets/hero-slide1.png" alt="" class="active">
+          <img src="assets/hero-slide2.png" alt="">
+          <img src="assets/hero-slide3.png" alt="">
+          <button class="prev" data-i18n-label="slideshow.prev"><span aria-hidden="true" data-i18n="slideshow.prevSymbol"></span></button>
+          <button class="next" data-i18n-label="slideshow.next"><span aria-hidden="true" data-i18n="slideshow.nextSymbol"></span></button>
+        </div>
+        <img src="assets/avatar.png" alt="avatar" class="avatar">
+      </div>
+    </section>
+    <section id="about">
+      <h2 data-i18n="about.h2"></h2>
+      <p data-i18n="about.body"></p>
+    </section>
+    <section id="skills">
+      <h2 data-i18n="skills.h2"></h2>
+      <ul class="skills-list">
+        <li data-i18n="skill.unity"></li>
+        <li data-i18n="skill.llm"></li>
+        <li data-i18n="skill.simulation"></li>
+        <li data-i18n="skill.csharp"></li>
+        <li data-i18n="skill.python"></li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2 data-i18n="projects.h2"></h2>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+    <section id="contact">
+      <h2 data-i18n="contact.h2"></h2>
+      <p><a href="mailto:me@example.com" data-i18n="contact.email"></a></p>
+    </section>
+  </main>
+  <footer>
+    <small data-i18n="footer.copy"></small>
+  </footer>
+  <div id="lang-note" class="visually-hidden" aria-live="polite"></div>
+</body>
+</html>
